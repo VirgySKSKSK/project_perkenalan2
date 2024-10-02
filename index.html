@@ -28,11 +28,24 @@
             100% { transform: translateX(10px); }
         }
         .team-section {
-            background-image: url('https://example.com/gambar-latar-belakang.jpg'); /* Ganti dengan URL gambar Anda */
-            background-size: cover;
-            background-position: center;
+            background-color: #e9ecef;
             padding: 40px 0;
-            color: white; /* Mengubah warna teks agar kontras dengan gambar */
+            position: relative;
+        }
+        .team-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            text-align: center;
+            pointer-events: none;
+        }
+        .team-background i {
+            font-size: 100px;
+            color: #007bff;
+            margin: 10px;
         }
         .portfolio-item {
             margin: 20px 0;
@@ -71,6 +84,13 @@
 
     <div class="container mt-5 team-section">
         <h2 class="text-center">Tim Kami</h2>
+        <div class="team-background">
+            <i class="fas fa-user"></i>
+            <i class="fas fa-cogs"></i>
+            <i class="fas fa-lightbulb"></i>
+            <i class="fas fa-code"></i>
+            <i class="fas fa-paint-brush"></i>
+        </div>
         <div class="row">
             <div class="col-md-3 portfolio-item text-center">
                 <div class="card card-jenal">
